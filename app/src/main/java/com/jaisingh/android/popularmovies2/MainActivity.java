@@ -1,6 +1,7 @@
 package com.jaisingh.android.popularmovies2;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -19,7 +20,9 @@ import com.jaisingh.android.popularmovies2.QueryServer.Connection;
 import com.jaisingh.android.popularmovies2.QueryServer.ResponseModel;
 import com.jaisingh.android.popularmovies2.QueryServer.RetrofitAPI;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import retrofit.Callback;
 import retrofit.RetrofitError;
@@ -56,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         gridView = (GridView)findViewById(R.id.gridView);
         getPopularMovies(gridView);
         gridView.setOnItemClickListener(gridListener);
+
     }
     AdapterView.OnItemClickListener gridListener = new AdapterView.OnItemClickListener() {
         @Override
@@ -139,7 +143,36 @@ public class MainActivity extends AppCompatActivity {
             getTopRatedMovies(lbl);
             return true;
         }
-
+        else if ( id == R.id.favorites )
+        {
+            getFavoriteMovies(lbl);
+        }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void getFavoriteMovies(TextView lbl) {
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("favorites", MODE_PRIVATE);
+        SharedPreferences poster_pref = getApplicationContext().getSharedPreferences("poster_path", MODE_PRIVATE);
+        Map<String, ?> allEntries = pref.getAll();
+        List<com.jaisingh.android.popularmovies2.QueryServer.Response> results = new ArrayList<com.jaisingh.android.popularmovies2.QueryServer.Response>();
+        for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
+            Log.d("map values", entry.getKey() + ": " + entry.getValue().toString());
+            com.jaisingh.android.popularmovies2.QueryServer.Response rp = new com.jaisingh.android.popularmovies2.QueryServer.Response();
+            try {
+                rp.setId(Integer.parseInt(entry.getKey()));
+                String posterPath = "dummy";
+                posterPath = poster_pref.getString(entry.getKey(), "Dummy path");
+                rp.setPosterPath(posterPath);
+                results.add(rp);
+                Toast.makeText(MainActivity.this, "Favorite: " + entry.getKey(), Toast.LENGTH_SHORT).show();
+            }
+            catch(Exception e)
+            {
+                Toast.makeText(MainActivity.this, "Error: "+entry.getKey(), Toast.LENGTH_SHORT).show();
+            }
+        }
+        respModel = new ResponseModel();
+        respModel.setResults(results);
+        loadGridView(respModel);
     }
 }

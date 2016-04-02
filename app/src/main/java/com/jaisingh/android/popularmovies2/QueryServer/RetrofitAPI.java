@@ -2,6 +2,8 @@ package com.jaisingh.android.popularmovies2.QueryServer;
 
 import com.jaisingh.android.popularmovies2.MainActivity;
 import com.jaisingh.android.popularmovies2.MovieModel.MovieModel;
+import com.jaisingh.android.popularmovies2.MovieModel.ReviewsModel;
+import com.jaisingh.android.popularmovies2.Trailers.TrailerModel;
 
 import retrofit.Callback;
 import retrofit.http.GET;
@@ -23,4 +25,9 @@ public interface RetrofitAPI
     @GET("/movie/{id}")
     void getMovieInfo(@Query("api_key") String KEY, @Path("id") String id, Callback<MovieModel> Moviecallback);
 
+    @GET("/movie/{id}/videos")
+    void getTrailers(@Query("api_key") String KEY, @Path("id") String id, Callback<TrailerModel> Trailercallback);
+
+    @GET("/movie/{id}/reviews")
+    void getReviews(@Query("api_key") String KEY, @Path("id") String id, Callback<ReviewsModel> Reviewscallback);
 }

@@ -40,7 +40,7 @@ public class ImageAdapter extends ArrayAdapter<Response>
 
         // Picasso.with(this.mContext).load("http://www.bathchronicle.co.uk/user/lw-avatar/3541022/profileSmall1407142824456.png").into(imageView);
 
-        String base_url = "http://image.tmdb.org/t/p/original/";
+        String base_url = "http://image.tmdb.org/t/p/w780/";
         Response movie = resp.get(position);
         String posterPath = movie.getPosterPath();
         String url = base_url+posterPath;

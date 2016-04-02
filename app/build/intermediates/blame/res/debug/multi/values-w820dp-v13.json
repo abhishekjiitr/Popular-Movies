@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\admin\\Desktop\\PopularMovies2\\app\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "outputFile": "/home/jaisingh/cs/git/Popular-Movies/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "C:\\Users\\admin\\Desktop\\PopularMovies2\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "file": "/home/jaisingh/cs/git/Popular-Movies/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 162
                 },
                 "from": {
-                    "file": "C:\\Users\\admin\\Desktop\\PopularMovies2\\app\\src\\main\\res\\values-w820dp\\strings.xml",
+                    "file": "/home/jaisingh/cs/git/Popular-Movies/app/src/main/res/values-w820dp/strings.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -49,7 +49,69 @@
                     "endOffset": 210
                 },
                 "from": {
-                    "file": "C:\\Users\\admin\\Desktop\\PopularMovies2\\app\\src\\main\\res\\values-w820dp\\strings.xml",
+                    "file": "/home/jaisingh/cs/git/Popular-Movies/app/src/main/res/values-w820dp/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 112,
+                        "endColumn": 47,
+                        "endOffset": 155
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/home/jaisingh/cs/git/Popular-Movies/C:\\Users\\admin\\Desktop\\New folder\\PopularMovies2\\app\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/home/jaisingh/cs/git/Popular-Movies/C:\\Users\\admin\\Desktop\\New folder\\PopularMovies2\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 295,
+                        "endColumn": 57,
+                        "endOffset": 348
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 53,
+                    "endOffset": 162
+                },
+                "from": {
+                    "file": "/home/jaisingh/cs/git/Popular-Movies/C:\\Users\\admin\\Desktop\\New folder\\PopularMovies2\\app\\src\\main\\res\\values-w820dp\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 53,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 167,
+                    "endColumn": 47,
+                    "endOffset": 210
+                },
+                "from": {
+                    "file": "/home/jaisingh/cs/git/Popular-Movies/C:\\Users\\admin\\Desktop\\New folder\\PopularMovies2\\app\\src\\main\\res\\values-w820dp\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,

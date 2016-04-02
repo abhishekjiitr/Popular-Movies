@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\admin\\Desktop\\PopularMovies2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\admin\\Desktop\\PopularMovies2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "/home/jaisingh/cs/git/Popular-Movies/C:\\Users\\admin\\Desktop\\New folder\\PopularMovies2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
+        "source": "/home/jaisingh/cs/git/Popular-Movies/C:\\Users\\admin\\Desktop\\New folder\\PopularMovies2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "/home/jaisingh/cs/git/Popular-Movies/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
+        "source": "/home/jaisingh/cs/git/Popular-Movies/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     }
 ]
